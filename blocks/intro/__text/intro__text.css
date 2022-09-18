@@ -1,0 +1,35 @@
+.intro__text {
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    margin: 0;
+    max-width: 690px;
+    padding-bottom: 33px;
+}
+
+@media screen and (min-width: 786px) and (max-width: 1024px) {
+    .intro__text {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+} 
+
+@media screen and (max-width: 786px) {
+    .intro__text {
+        margin-left: 24px;
+        margin-right: 24px;
+        max-width: 100%;
+    }
+} 
+
+@media screen and (max-width: 320px) {
+    .intro__text {
+        margin-left: 16px;
+        margin-right: 16px;
+        max-width: 100%;
+        padding-bottom: 34px;
+    }
+} 
