@@ -9,9 +9,9 @@
     margin-right: 16px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .footer-links {
-        padding-bottom: 24px;
+        padding-bottom: calc((100vw - 320px)/(768 - 320)*(0 - 48) + 48px);
     }
 }
 
