@@ -2,14 +2,32 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1184px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
+    background-image: url(../../images/cover-trains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
     position: relative;
-    padding-bottom: 92px;
+    margin-bottom: 92px;
 }
+
+.cover::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2a2c2f;
+    opacity: 0.3;
+  }
+
+  .cover:hover::after {
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
 
 @media screen and (min-width: 1280px) {
     .cover {
@@ -26,22 +44,21 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .cover {
         min-height: calc((100vw - 768px)/(1024 - 768)*(640 - 480) + 480px);
-        padding-bottom: calc((100vw - 768px)/(1024 - 768)*(92 - 88) + 88px);
+        margin-bottom: calc((100vw - 768px)/(1024 - 768)*(92 - 88) + 88px);
     }
  }
 
- @media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .cover {
         min-height: calc((100vw - 320px)/(768 - 320)*(480 - 200) + 200px);
-        gap: calc((100vw - 320px)/(768 - 320)*(32 - 16) + 16px);
-        padding-bottom: calc((100vw - 320px)/(768 - 320)*(88 - 64) + 64px);
+        margin-bottom: calc((100vw - 320px)/(768 - 320)*(88 - 64) + 64px);
     }
 }
 
 @media screen and (max-width: 320px) {
     .cover {
         gap: 16px;
-        padding-bottom: 64px;
+        margin-bottom: 64px;
         min-height: 200px;
     }
  }
