@@ -4,6 +4,22 @@
     text-decoration: none;
     font-size: 24px;
     line-height: 117%;
+    padding-right: 18px;
+}
+
+.header__lang-link:last-of-type {
+    padding-right: 0;
+}
+
+.header__lang-link:hover {
+    opacity: 0.8;
+    transition: opacity 0.1s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .header__lang-link {
+        font-size: calc((100vw - 320px)/(768 - 320)*(24 - 18) + 18px);
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -11,3 +27,5 @@
         font-size: 18px;
     }
 }
+
+

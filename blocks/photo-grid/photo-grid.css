@@ -10,20 +10,36 @@
     margin-right: 48px;
     padding-bottom: 92px;
 }
+
 @media screen and (min-width: 1280px) {
     .photo-grid {
         gap: 16px;
     }
-} 
+}
+
+@media screen and (max-width: 1280px) {
+    .photo-grid {
+        gap: calc((100vw - 1024)/(1280 - 1024)*(16 - 14) + 14px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .photo-grid {
+        gap: calc((100vw - 768px)/(1024 - 768)*(14 - 16) + 16px);
+        margin-left: calc((100vw - 768px)/(1024 - 768)*(48 - 24) + 24px);
+        margin-right: calc((100vw - 768px)/(1024 - 768)*(48 - 24) + 24px);
+        padding-bottom: calc((100vw - 768px)/(1024 - 768)*(92 - 88) + 88px);
+    }
+}
 
 @media screen and (max-width: 768px) {
     .photo-grid {
-        margin-left: 24px;
-        margin-right: 24px;
-        gap: 16px;
-        padding-bottom: 88px;
+        gap: calc((100vw - 320px)/(768 - 320)*(16 - 12) + 12px);
+        margin-left: calc((100vw - 320px)/(768 - 320)*(24 - 16) + 16px);
+        margin-right: calc((100vw - 320px)/(768 - 320)*(24 - 16) + 16px);
+        padding-bottom: calc((100vw - 320px)/(768 - 320)*(88 - 64) + 64px);
     }
-} 
+}
 
 @media screen and (max-width: 320px) {
     .photo-grid {
@@ -32,4 +48,4 @@
         gap: 12px;
         padding-bottom: 64px;
     }
-} 
+}

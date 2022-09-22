@@ -10,6 +10,18 @@
     }
 }
 
+@media screen and (max-width: 1280px) {
+    .lead__image {
+        padding-top: calc((100vw - 1024px)/(1280 - 1024)*(64 - 56) + 56px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lead__image {
+        padding-top: calc((100vw - 320px)/(768 - 320)*(56 - 40) + 40px);
+    }
+}
+
 @media screen and (max-width: 320px) {
     .lead__image {
         padding-top: 40px;

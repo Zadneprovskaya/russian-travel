@@ -1,30 +1,47 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    max-height: 52px;
-    width: calc(100% - 96px);
+    align-items: center;
+    width: 100%;
+    max-width: 928px;
     margin: auto;
     margin-top: 28px;
+    margin-left: 48px;
+    margin-right: 48px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1280px) {
     .header {
-        width: calc(100% - 48px);
+        max-width: 1184px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .header {
+        max-width: calc((100vw - 1024px)/(1280 - 1024)*(1184 - 928) + 928px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        max-width: calc((100vw - 768px)/(1024 - 768)*(928 - 720) + 720px);
+        margin-left: calc((100vw - 768px)/(1024 - 768)*(48 - 24) + 24px);
+        margin-right: calc((100vw - 768px)/(1024 - 768)*(48 - 24) + 24px);
     }
 }
 
 @media screen and (max-width: 768px) {
     .header {
-        width: calc(100% - 48px);
+        max-width: calc((100vw - 320px)/(768 - 320)*(720 - 288) + 288px);
+        margin-left: calc((100vw - 320px)/(768 - 320)*(24 - 16) + 16px);
+        margin-right: calc((100vw - 320px)/(768 - 320)*(24 - 16) + 16px);
+        margin-top: calc((100vw - 320px)/(768 - 320)*(28 - 16) + 16px);
     }
 }
 
 @media screen and (max-width: 320px) {
     .header {
-        max-height: 42px;
-        width: calc(100% - 32px);
+        max-width: 288px;
+        margin-top: 16px;
     }
 }
-
-

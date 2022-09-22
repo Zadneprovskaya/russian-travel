@@ -7,10 +7,12 @@
     letter-spacing: 2px;
     margin: 0;
     padding-bottom: 12px;
+    text-transform: uppercase;
+    display: block
 }
 
 @media screen and (max-width: 786px) {
     .website__url-heading {
         line-height: 100%;
     }
-} 
+}

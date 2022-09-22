@@ -2,16 +2,16 @@
     align-self: end;
 }
 
-@media screen and (min-width: 320px) and (max-width: 786px) {
+@media screen and (max-width: 786px) {
     .website {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: calc((100vw - 320px)/(768 - 320)*(0 - 16) + 16px);
+        margin-right: calc((100vw - 320px)/(768 - 320)*(0 - 16) + 16px);
     }
-} 
+}
 
 @media screen and (max-width: 320px) {
     .website {
         margin-left: 16px;
         margin-right: 16px;
     }
-} 
+}
