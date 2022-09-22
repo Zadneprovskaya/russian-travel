@@ -8,7 +8,7 @@
     margin: 0;
     padding-bottom: 12px;
     text-transform: uppercase;
-    display: block
+    display: block;
 }
 
 @media screen and (max-width: 786px) {
